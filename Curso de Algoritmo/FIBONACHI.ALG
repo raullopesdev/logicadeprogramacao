@@ -1,7 +1,15 @@
-algoritmo "fibonachi"
+algoritmo "fibonacci"
 var
-   cont: inteiro
+   c, t1, t2, t3: inteiro
 inicio
-      para cont <- cont ate 15 passo 1 faca
-           escreva (cont + 1
+      t1 <- 0
+      escreva (t1)
+      t2 <- 1
+      escreva (t2)
+      para c := 3 ate 15 faca
+           t3 := t1 + t2
+           escreva (t3)
+           t1 := t2
+           t2 := t3
+      fimpara
 fimalgoritmo
