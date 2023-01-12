@@ -7,8 +7,11 @@ inicio
       para i <- 1 ate 7 faca
            escreva ("Digite o ", i, "º. valor: ")
            leia (val[i])
+      fimpara
+      para i <- 1 ate 7 faca
            Se (val[i] % 2 = 0) entao
               totpar <- totpar + 1
+              escreval ("Valor PAR na posição ", i)
            fimse
       fimpara
       escreval ("O total de pares foi ", totpar)
