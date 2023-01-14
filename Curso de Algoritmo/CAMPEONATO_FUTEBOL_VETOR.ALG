@@ -1,23 +1,24 @@
 algoritmo "campeonato_futebol_vetor"
 var
    time: vetor[1..3] de caractere
-   i, j, aux: inteiro
+   l, c: inteiro
 inicio
-      para i <- 1 ate 3 faca
-             escreva ("Nome do ", i, "º time: ")
-             leia (time[i])
+      escreval ("---------------------")
+      escreval ("CAMPEONATO DE FUTEBOL")
+      escreval ("---------------------")
+      para c <- 1 ate 3 faca
+             escreva ("Nome do ", c, "º time: ")
+             leia (time[c])
       fimpara
-      para i <- 1 ate 2 faca
-           para j <- i+1 ate 3 faca
-                se (time[i] = time[j]) entao
-                   aux <- time[i]
-                   time[i] <- time[j]
-                   time[j] <- aux
+      limpatela
+      escreval ("-------------------")
+      escreval ("TABELAS DE PARTIDAS")
+      escreval ("-------------------")
+      para l <- 1 ate 3 faca
+           para c <- 1 ate 3 faca
+                se (l <> c) entao
+                   escreval (time[l]:12, " [ ] x [ ] ", time[c]:12)
                 fimse
            fimpara
-      fimpara
-      para i <- 1 ate 3 faca
-           escreval ("Tabela de partidas")
-           escreval (time[i])
       fimpara
 fimalgoritmo
