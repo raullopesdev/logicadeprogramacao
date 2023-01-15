@@ -31,13 +31,10 @@ inicio
       soma <- 0
       escreval ("NOTAS FINAIS")
       escreval ("---------------------")
-      para respaluno <- 1 ate 5 faca
-           para i <- 1 ate 5 faca
-                se (gab[i] == res[respaluno]) entao
-                soma <- soma + 2
-
-                fimse
-                escreval (nome[nota]:10, soma)
-           fimpara
+      para nota <- 1 ate 3 faca
+           se (gab[i] = res[respaluno]) entao
+           soma <- soma + 2
+           fimse
+           escreval (nome[nota]:10, soma)
       fimpara
 fimalgoritmo
