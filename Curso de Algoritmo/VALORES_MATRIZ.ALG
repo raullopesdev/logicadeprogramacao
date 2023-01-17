@@ -1,7 +1,7 @@
 algoritmo "valores_matriz"
 var
    m: vetor[1..4, 1..4] de inteiro
-   l, c, sdp, p2l: inteiro
+   l, c, sdp, p2l, mai3c: inteiro
 inicio
       sdp <- 0
       p2l <- 1
@@ -26,6 +26,13 @@ inicio
            p2l <- p2l * m[2,c]
       fimpara
       
+      para l <- 1 ate 4 faca
+           se (m[l,3]) > mai3c entao
+              mai3c <- m[l,3]
+           fimse
+      fimpara
+      
       escreval ("A soma dos valores da diagonal principal é ", sdp)
       escreval ("O produto dos valores da segunda linha é ", p2l)
+      escreval ("O maior valor da terceira coluna é ", mai3c)
 fimalgoritmo
