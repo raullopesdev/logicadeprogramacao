@@ -1,7 +1,7 @@
 algoritmo "matriz_composta"
 var
    mat: vetor[1..4, 1..4] de inteiro
-   l, c: inteiro
+   l, c, opcao, resp: inteiro
 inicio
       l <- 0
       c <- 0
@@ -20,5 +20,16 @@ inicio
       escreval ("[4] Triângulo Inferior")
       escreval ("[5] Sair")
       escreval ("===== OPÇÃO:")
-
+      leia(opcao)
+      escolha opcao
+              caso 1
+                   para l <- 1 ate 4 faca
+                        para c <- 1 ate 4 faca
+                             escreva (mat[l,c]:4)
+                        fimpara
+                        escreval()
+                   fimpara
+              caso 2
+                   escreva("teste")
+      fimescolha
 fimalgoritmo
