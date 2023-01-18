@@ -7,7 +7,18 @@ inicio
       c <- 0
       para l <- 1 ate 4 faca
            para c <- 1 ate 4 faca
-                escreva (mat[l,c])
+                escreva ("Digite o valor para a posição [", l, ",", c, "]")
+                leia(mat[l,c])
            fimpara
       fimpara
+      limpatela
+      escreval ("MENU DE OPÇÕES")
+      escreval ("======================")
+      escreval ("[1] Mostrar a Matriz")
+      escreval ("[2] Diagonal Principal")
+      escreval ("[3] Triângulo Superior")
+      escreval ("[4] Triângulo Inferior")
+      escreval ("[5] Sair")
+      escreval ("===== OPÇÃO:")
+
 fimalgoritmo
