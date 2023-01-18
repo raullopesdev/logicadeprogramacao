@@ -17,35 +17,35 @@ procedimento diagonalprincipal
 var t: inteiro
 inicio
       para l <- 1 ate 4 faca
-           escreval(m[l,l]:4)
-           para t <- 1 ate 1 faca
+           escreval(mat[l,l]:4)
+           para t <- 1 ate l faca
                 escreva("  ")
            fimpara
       fimpara
 fimprocedimento
 
 procedimento triangulosuperior()
-var t: inteiro
+var t: Inteiro
 inicio
-      para l <- 1 ate 3 faca
-           escreva ("  ")
-           para c <- 1+1 ate 4 faca
-                escreva (m[l,c]:4)
-           fimpara
-           escreval()
-           para t <- 1 ate 1 faca
-                escreva ("  ")
-           fimpara
-      fimpara
-      escreval()
-fimprocedimento
+   Para l <- 1 ate 3 faca
+      Escreva("    ")
+      Para c <- l+1 ate 4 faca
+         Escreva(mat[l,c]:4)
+      FimPara
+      EscrevaL()
+      Para t <- 1 ate l faca
+         Escreva("    ")
+      FimPara
+   FimPara
+   EscrevaL()
+FimProcedimento
 
 procedimento trianguloinferior
 inicio
       para l <- 2 ate 4 faca
            escreval()
-           para c <- 1 ate 1-1 faca
-                escreva(m[l,c]:4)
+           para c <- 1 ate l-1 faca
+                escreva(mat[l,c]:4)
            fimpara
       fimpara
       escreval()
